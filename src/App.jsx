@@ -1,10 +1,10 @@
 import { createSignal, createEffect } from 'solid-js'
 import './App.css'
 
-function App() {
-  // 記事一覧を取得する
-  const [articles, setArticles] = createSignal([{}]);
+import { articles, setArticles } from './Signal.jsx'
 
+function App() {
+  
   createEffect(() => {
     const url = `https://cms.codecodeweb.com/wp-json/wp/v2/posts?_embed&per_page=10`;
     fetch(url)
