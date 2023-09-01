@@ -18,7 +18,7 @@ function App() {
             //fetch自体が失敗したとき
             console.log("取得に失敗しました。" + "error: " + error);
         })
-  }, []);
+  });
   
   // 記事一覧を表示する
   return (
